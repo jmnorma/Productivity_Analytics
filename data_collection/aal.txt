@@ -1,0 +1,72 @@
+Adobe After Effects CC 2018 
+Adobe Creative Cloud 
+Adobe Illustrator 2020 
+Adobe Lightroom CC 
+Adobe Media Encoder CC 2018 
+Adobe Photoshop 2020 
+Adobe Premiere Pro CC 2018 
+Airtame 
+Alfred 
+Android Studio 
+Atom 
+Axure RP 
+Blender 
+Cisco 
+Cisco Webex Meetings 
+Fetch 
+Firefox 
+GarageBand 
+Geany 
+Google Chrome 
+Google Drive 
+Grammarly 
+Honey 
+IntelliJ IDEA CE 
+Keynote 
+LockDown Browser 
+MATLAB_R2018b 
+MacPorts 
+Malwarebytes Anti-Malware 
+Microsoft Excel 
+Microsoft OneNote 
+Microsoft Outlook 
+Microsoft PowerPoint 
+Microsoft Silverlight 
+Microsoft Teams 
+Microsoft Word 
+Minecraft 
+Minesweeper 101 
+Minesweeper Deluxe 
+NoMachine 
+Numbers 
+OpenSCAD 
+PASCO Capstone 
+Pages 
+Postman 
+PyCharm CE 
+Python 3.7 
+R 
+RStudio 
+Raspberry Pi Imager 
+SMART Technologies 
+SWI-Prolog 
+Safari 
+Slack 
+Solstice Client 
+Spark AR Studio 
+Spotify 
+Symantec Solutions 
+Ultimaker Cura 
+Utilities 
+VLC 
+Visual Studio Code 
+Wolfram CDF Player 
+Xcode 
+cura-lulzbot 
+draw.io 2 
+draw.io 
+duet 
+iMovie 
+iPrint Uninstallation 
+iPrint 
+zoom.us 
