@@ -1,0 +1,182 @@
+#:kivy 1.9.1
+
+#Hamburger Menu: Attribute: Icons made by "https://www.flaticon.com/authors/freepik" title="Freepik"
+#Refresh Icon Attritibute: Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+
+<StartUpWindow>:
+    name: "start"
+
+    canvas: 
+
+    FloatLayout: 
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "data/background.png"
+        
+        BoxLayout:
+            orientation: "vertical"
+
+
+            Image: 
+                source: 'data/STRV_Logo.png'
+        
+            FloatLayout: 
+            
+                BoxLayout:
+                    orientation: "vertical"
+                    padding_top: .3
+                    size_hint_y: .3
+                    size_hint_x: .7
+                    pos_hint: { "center_y":0.5, "center_x":.5}
+                    Button: 
+                        background_color: 1, .57, .3, .5
+                        text:"Lets Fucking Work"
+                        on_release: root.continueBtn()
+                        background_normal: ''
+
+                    Button:
+                        text: 'Create an Account Bitch'
+                        background_color: .55, .32, 1, .5 
+                        on_release: root.continueBtn()
+                        background_normal: ''
+
+<MainWindow>:
+    name: "main"
+    label: pieSpace
+    label: bar 
+    label: prod 
+    label: unPro
+
+    FloatLayout: 
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "data/background1.png"
+
+
+        FloatLayout: 
+            Button: 
+                text: "Menu" 
+                size_hint_y: .1
+                size_hint_x: .1
+                pos_hint: {"top":1, "x":0 }
+                
+            Button: 
+                text: "Refresh" 
+                size_hint_y: .092
+                size_hint_x: .1
+                pos_hint: {"top":1, "x":.9 }
+
+            Label:
+                text:"Productivity Analysis"
+                size_hint_y: .1
+                font_size: sp(30)
+                font_name: 'Arial'
+                pos_hint: { "top":1, "center_x":.5}
+
+            BoxLayout:
+                orientation: "vertical"
+
+                FloatLayout:
+                    size_hint_y: .1
+                    pos_hint: { "top":0, "center_x":.5}
+
+                    
+                
+                BoxLayout:
+                    orientation: "horizontal"
+
+                    BoxLayout:
+                        orientation: "vertical" 
+
+                        GridLayout: 
+                            cols: 1 
+                            rows: 1 
+                            id: pieSpace
+                            pos_hint: { "center_x": .5}
+                        
+                        Label:
+                            text: "Productive Time Spent"
+                            size_hint_y:.1 
+                            font_size: sp(15)
+                            bold: True 
+                            underline: True 
+                            color: 0,0,0, .8
+
+
+                        ScrollView: 
+                            do_scroll_x: False 
+                            do_scroll_y: True 
+                            size_hint_y:.4 
+                            BoxLayout:
+                                orientation: 'vertical'
+                                size_hint_y: .8 
+                                id: prod 
+                                      
+                        Label:
+                            text: "Unproductive Time Spent"
+                            size_hint_y:.1 
+                            underline: True 
+                            font_size: sp(15)
+                            bold: True 
+                            color: 0,0,0, .8 
+
+
+                        ScrollView:
+                            do_scroll_x: False 
+                            do_scroll_y: True 
+                            size_hint_y:.4  
+                            BoxLayout:
+                                orientation: 'vertical'
+                                size_hint_y: .8 
+                                id: unPro
+                               
+                    BoxLayout:
+                        orientation: "vertical" 
+                        
+                        Label: 
+                            size_hint_y:.1
+                        Label: 
+                            id: date 
+                            text: 'Wednesday April 22, 2020'
+                            color: 0,0,0,.6
+                            bold: True
+                            size_hint_y: .2
+                            font_size: sp(25)
+
+                        Label:
+                            id: timeCollected
+                            text: "Time Collected: 03:07:56" 
+                            color: 0,0,0,1
+                            size_hint_y: .1
+                        
+                        Label:
+                            id: lastTime
+                            text: "Last Collected: 13:46:43" 
+                            color: 0,0,0,1
+                            size_hint_y: .1
+
+                        Label:
+                            id: percentProductive
+                            text: "Productivity: 56%" 
+                            bold: True 
+                            color: 0,0,0,1
+                            size_hint_y: .1
+
+                        Label: 
+                            size_hint_y: .1
+
+                        BoxLayout:
+                            orientation: "vertical"
+                            id: bar 
+                        
+
+                        
+                                    
+
+                            
+                    
+                    
