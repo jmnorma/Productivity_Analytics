@@ -27,11 +27,12 @@ LockDown Browser
 MATLAB_R2018b 
 MacPorts 
 Malwarebytes Anti-Malware 
+Messages 
 Microsoft Excel 
 Microsoft OneNote 
 Microsoft Outlook 
 Microsoft PowerPoint 
-Microsoft Silverlight 
+Microsoft Silverlight
 Microsoft Teams 
 Microsoft Word 
 Minecraft 
@@ -39,9 +40,11 @@ Minesweeper 101
 Minesweeper Deluxe 
 NoMachine 
 Numbers 
+Notes 
 OpenSCAD 
 PASCO Capstone 
 Pages 
+Preview 
 Postman 
 PyCharm CE 
 Python 3.7 

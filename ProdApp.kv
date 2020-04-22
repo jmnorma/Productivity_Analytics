@@ -1,7 +1,19 @@
 #:kivy 1.9.1
+<PopupWindow>:
+    BoxLayout:
+        orientation:"vertical"
 
-#Hamburger Menu: Attribute: Icons made by "https://www.flaticon.com/authors/freepik" title="Freepik"
-#Refresh Icon Attritibute: Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+        Label:
+            text:"Welcome to STRV!"
+            size_hint_y:.2
+            font_size: sp(25)
+        ScrollView:
+            Label:    
+                size: self.texture_size  
+                size_hint: None, None
+                pos_hint:{"center_x":.5}
+                text: " Before we can begin tracking your productive days you need\n tell us which apps to track.To do this please create two txt file\n and place them in the same directory as this python file\n \n      Naming is Important\n\n -Please name the first file aal.txt (Acceptable Application List)\n and place all of the app names you want us to track\n\n -For the next file please name it prod_app.txt (Productive\n Application List) and place all of the app names you deem \n as productive.\n\n You find that these files are probably already created with \n a suggested list of application but every list should be\n different based on the users needs\n\n One you've done that, restart the application and you're ready\n to start tracking!\n\n -Launch the App and press 'To More Productive Days'\n\n -Once in the main dashboard click the Green 'Start' button in\n the upper right hand cornert\n\n\n And thats it, your stats will start flowing in\n\n"
+        
 
 <StartUpWindow>:
     name: "start"
@@ -32,22 +44,31 @@
                     pos_hint: { "center_y":0.5, "center_x":.5}
                     Button: 
                         background_color: 1, .57, .3, .5
-                        text:"Lets Fucking Work"
+                        text:"To More Productive Days!"
                         on_release: root.continueBtn()
                         background_normal: ''
 
                     Button:
-                        text: 'Create an Account Bitch'
+                        text: 'How to Get Started'
                         background_color: .55, .32, 1, .5 
-                        on_release: root.continueBtn()
+                        on_release: root.howToButton()
                         background_normal: ''
 
 <MainWindow>:
     name: "main"
+    #Charts
     label: pieSpace
     label: bar 
+
+    #Data 
+    label: start
     label: prod 
     label: unPro
+    label: date 
+    label: timeCollected 
+    label: lasTime
+    label: percentProductive 
+
 
     FloatLayout: 
         canvas.before:
@@ -63,11 +84,15 @@
                 size_hint_y: .1
                 size_hint_x: .1
                 pos_hint: {"top":1, "x":0 }
+                on_release: root.menuButton()
                 
             Button: 
-                text: "Refresh" 
+                id: start
+                text: "Start" 
+                background_color: 0,1,0,1
                 size_hint_y: .092
                 size_hint_x: .1
+                on_release: root.startButton()
                 pos_hint: {"top":1, "x":.9 }
 
             Label:
@@ -165,6 +190,14 @@
                             bold: True 
                             color: 0,0,0,1
                             size_hint_y: .1
+                        Button:
+                            text: "Share On Slack"
+                            background_color: 0,1,0, .76
+                            pos_hint: { "center_x": .5}
+                            size_hint_x: .4
+                            size_hint_y: .1 
+                            on_release: root.shareButton()
+
 
                         Label: 
                             size_hint_y: .1

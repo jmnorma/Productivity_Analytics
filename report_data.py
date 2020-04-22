@@ -1,6 +1,7 @@
 from top_extraction import top_extraction 
 
 import time 
+import calendar
 from datetime import datetime, date
 
 class report_data:
@@ -13,28 +14,35 @@ class report_data:
         self.timeDic = {}
 
         #Time Data
-        self.LastTime 
+        self.LastTime = ''
         self.RunningTime = 0
 
         #Date Data 
         today = date.today()
 
-        self.date = today.strftime("%B %d, %Y")
+        self.date = calendar.day_name[today.weekday()]+", "+ today.strftime("%B %d, %Y")
         self.AAL = [] ## Acceptable Application List ( i.e. all )
         self._get_AAL()
-
+        self._get_prodApp()
 
     def _get_AAL(self):
         f = open("aal.txt","r")
         text = f.read()
         self.AAL = text.split("\n")
+        f.close()
+
+    def _get_prodApp(self):
+        f = open("prod_app.txt","r")
+        text = f.read()
+        self.prodApp = text.split("\n")
+        f.close()
 
     def getDate(self):
         return self.date
 
     def update(self):
         #Retrive Top 
-        self.top.update()
+        self.raw = self.top.update()
 
         #Record Time
         now = datetime.now()
@@ -43,9 +51,10 @@ class report_data:
 
         #Parce Data 
         self.report_important()
-        self.update_timeDic
+        self.update_timeDic()
+        self.reportProd()
 
-        return [self.timeDic, self.LastTime, self.RunningTime ]
+        return [self.timeDic, self.LastTime, self.RunningTime, self.pro, self.unpro ]
 
     def get_report( self ):
         return ( self.important_list, self.raw)
@@ -74,22 +83,37 @@ class report_data:
 
     def report_important( self ):
         self.important_list = []
-
         for key, value in self.raw.items():
             for app in self.AAL:
-                if app.find(key) >= 0:
+                if app.find(key.rstrip()) >= 0:
                     self.important_list.append(key)
         
         return self.important_list
 
     def update_timeDic(self):
+        if len(self.important_list) == 0:
+            self.important_list.append("idle")
         for key in self.important_list:
             if key in self.timeDic:
-                print("Adding ONE")
                 self.timeDic[key]= self.timeDic[key]+ 1
             else:
-                print("new ADDITION")
                 self.timeDic[key]= 1
+        self.important_list = []
+
+    def reportProd(self):
+        self.pro = []
+        self.unpro = []
+
+        for key in self.timeDic:
+            found = False
+            for app in self.prodApp:
+                if app.find(key.rstrip()) >= 0: 
+                    self.pro.append(key)
+                    found = True
+            if not found:
+                self.unpro.append(key)
+
+        return( self.pro, self.unpro)
 
 def main():
     report = report_data()

@@ -1,0 +1,66 @@
+Processes: 378 total, 2 running, 376 sleeping, 2074 threads 
+2020/04/22 17:38:19
+Load Avg: 3.05, 3.60, 3.63 
+CPU usage: 20.95% user, 25.71% sys, 53.33% idle 
+SharedLibs: 225M resident, 49M data, 12M linkedit.
+MemRegions: 109654 total, 2288M resident, 69M private, 659M shared.
+PhysMem: 8054M used (2138M wired), 138M unused.
+VM: 2868G vsize, 1882M framework vsize, 2603042(0) swapins, 3214112(0) swapouts.
+Networks: packets: 1921156/1939M in, 671548/207M out.
+Disks: 2803347/34G read, 551280/18G written.
+
+PID   COMMAND          %CPU TIME     #TH #WQ #PORTS MEM   PURG  CMPRS PGRP PPID STATE   
+4841  top              0.0  00:00.26 1/1 0   14     3072K 0B    0B    4829 4829 running 
+4840  mdworker_shared  0.0  00:00.10 5   2   64     3924K 0B    0B    4840 1    sleeping
+4829  Python           0.0  00:01.28 5   4   136    85M   8540K 0B    4829 3574 sleeping
+4789  mdworker_shared  0.0  00:00.05 3   1   48     3272K 0B    1140K 4789 1    sleeping
+4785  automountd       0.0  00:00.01 7   1   30     1040K 0B    760K  4785 1    sleeping
+4777  syncdefaultsd    0.0  00:00.42 3   1   254    13M   0B    7172K 4777 1    sleeping
+4564  mdworker_shared  0.0  00:00.06 3   1   42     3304K 0B    3280K 4564 1    sleeping
+4560  coresymbolicatio 0.0  00:00.08 2   1   24     2464K 0B    2452K 4560 1    sleeping
+4559  ReportCrash      0.0  00:00.99 4   1   80     10M   0B    10M   4559 1    sleeping
+4449  com.apple.WebKit 0.0  00:00.10 3   1   85     4152K 0B    3840K 4449 1    sleeping
+Processes: 378 total, 3 running, 375 sleeping, 2063 threads 
+2020/04/22 17:38:20
+Load Avg: 3.05, 3.60, 3.63 
+CPU usage: 17.47% user, 12.42% sys, 70.10% idle 
+SharedLibs: 225M resident, 49M data, 12M linkedit.
+MemRegions: 109654 total, 2288M resident, 69M private, 659M shared.
+PhysMem: 8052M used (2142M wired), 139M unused.
+VM: 2868G vsize, 1882M framework vsize, 2603042(0) swapins, 3214112(0) swapouts.
+Networks: packets: 1921491/1939M in, 671590/207M out.
+Disks: 2803350/34G read, 551281/18G written.
+
+PID   COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG  CMPRS PGRP PPID STATE   
+4266  zoom.us          56.5 44:23.43 47    6   1000   265M   0B    189M  4266 1    sleeping
+4841  top              12.6 00:00.43 1/1   0   25+    3192K+ 0B    0B    4829 4829 running 
+303   WindowServer     9.8  24:49.39 9/1   4   3592-  456M-  5376K 70M   303  1    running 
+0     kernel_task      7.1  26:37.16 209/4 0   0      455M-  0B    0B    0    0    running 
+262   coreaudiod       6.7  04:45.87 11    2   587    6524K  0B    5492K 262  1    sleeping
+415   VDCAssistant     4.0  02:54.28 9     4   144    17M    0B    5408K 415  1    sleeping
+839   Adobe CEF Helper 1.3  08:47.88 11    1   177    108M   0B    100M- 629  629  sleeping
+550   Dock             1.0  00:11.37 5     2   670    96M    256K  78M   550  1    sleeping
+777   Adobe CEF Helper 0.4  02:54.88 8     1   136    106M   0B    18M   629  629  sleeping
+3635  Microsoft.Python 0.4  01:26.90 23    0   48     466M   0B    385M  3442 3468 sleeping
+Processes: 378 total, 2 running, 376 sleeping, 2008 threads 
+2020/04/22 17:38:21
+Load Avg: 3.05, 3.60, 3.63 
+CPU usage: 18.94% user, 9.83% sys, 71.22% idle 
+SharedLibs: 225M resident, 49M data, 12M linkedit.
+MemRegions: 109654 total, 2288M resident, 69M private, 659M shared.
+PhysMem: 8041M used (2130M wired), 151M unused.
+VM: 2868G vsize, 1882M framework vsize, 2603042(0) swapins, 3214112(0) swapouts.
+Networks: packets: 1921824/1940M in, 671627/207M out.
+Disks: 2803355/34G read, 551282/18G written.
+
+PID   COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG  CMPRS PGRP PPID STATE   
+4266  zoom.us          66.3 44:24.12 47    6   1000   265M   0B    189M  4266 1    sleeping
+303   WindowServer     11.8 24:49.51 9     4   3592   454M-  5376K 70M-  303  1    sleeping
+0     kernel_task      7.8  26:37.24 209/4 0   0      446M-  0B    0B    0    0    running 
+262   coreaudiod       7.5  04:45.95 11    2   587    6524K  0B    5492K 262  1    sleeping
+415   VDCAssistant     4.1  02:54.32 9     4   144    17M    0B    5408K 415  1    sleeping
+4841  top              3.6  00:00.47 1/1   0   25     3204K+ 0B    0B    4829 4829 running 
+839   Adobe CEF Helper 1.5  08:47.89 11    1   177    108M+  0B    100M  629  629  sleeping
+193   launchservicesd  1.1  03:08.67 4     3   681-   7392K- 0B    3780K 193  1    sleeping
+550   Dock             1.1  00:11.38 4     1   668-   96M-   256K  78M   550  1    sleeping
+619   SystemNotificati 0.9  02:04.25 7     1   193    32M+   0B    29M   619  1    sleeping
