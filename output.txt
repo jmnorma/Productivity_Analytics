@@ -1,66 +1,66 @@
-Processes: 402 total, 4 running, 398 sleeping, 1979 threads 
-2020/04/24 13:02:20
-Load Avg: 2.78, 2.33, 2.04 
-CPU usage: 48.2% user, 22.36% sys, 29.60% idle 
-SharedLibs: 224M resident, 48M data, 16M linkedit.
-MemRegions: 100471 total, 2336M resident, 119M private, 851M shared.
-PhysMem: 7824M used (2242M wired), 366M unused.
-VM: 1857G vsize, 1881M framework vsize, 36890795(0) swapins, 39452060(0) swapouts.
-Networks: packets: 9075857/8002M in, 5647274/3059M out.
-Disks: 14266458/297G read, 3589988/193G written.
+Processes: 415 total, 3 running, 412 sleeping, 2189 threads 
+2020/04/24 16:08:34
+Load Avg: 1.66, 1.69, 2.06 
+CPU usage: 13.93% user, 25.40% sys, 60.65% idle 
+SharedLibs: 228M resident, 43M data, 11M linkedit.
+MemRegions: 134987 total, 2393M resident, 103M private, 935M shared.
+PhysMem: 8032M used (2483M wired), 159M unused.
+VM: 3220G vsize, 1882M framework vsize, 39762431(0) swapins, 42834511(0) swapouts.
+Networks: packets: 10766842/9512M in, 6526661/3187M out.
+Disks: 16468371/334G read, 4373145/221G written.
 
 PID    COMMAND          %CPU TIME     #TH #WQ #PORTS MEM   PURG CMPRS PGRP  PPID  STATE   
-36970  top              0.0  00:00.29 1/1 0   14     2520K 0B   0B    36954 36954 running 
-36961  mdworker_shared  0.0  00:00.07 5   2   62     3852K 0B   0B    36961 1     sleeping
-36954  Python           0.0  00:01.71 5   4   193    98M   24M  0B    36954 33062 sleeping
-36941  Microsoft.Python 0.0  00:13.27 25  0   52     224M  0B   0B    33028 33061 sleeping
-36940  Code Helper (Ren 0.0  00:00.19 10  1   65     14M   0B   0B    33028 33061 sleeping
-36899  syncdefaultsd    0.0  00:00.74 6/1 4/1 681    15M   0B   0B    36899 1     running 
-36887  mdworker_shared  0.0  00:00.12 4   1   44     5816K 0B   0B    36887 1     sleeping
-36886  mdworker_shared  0.0  00:00.14 4   1   44     4708K 0B   0B    36886 1     sleeping
-36885  mdworker_shared  0.0  00:00.06 3   1   42     3296K 0B   0B    36885 1     sleeping
-36882  symquald         0.0  00:00.34 2   1   56     10M   0B   0B    36882 1     sleeping
-Processes: 401 total, 2 running, 399 sleeping, 2003 threads 
-2020/04/24 13:02:21
-Load Avg: 2.64, 2.31, 2.03 
-CPU usage: 25.87% user, 10.96% sys, 63.15% idle 
-SharedLibs: 224M resident, 48M data, 16M linkedit.
-MemRegions: 100410 total, 2329M resident, 119M private, 851M shared.
-PhysMem: 7808M used (2242M wired), 383M unused.
-VM: 1853G vsize, 1881M framework vsize, 36890795(0) swapins, 39452060(0) swapouts.
-Networks: packets: 9075858/8002M in, 5647274/3059M out.
-Disks: 14266473/297G read, 3589988/193G written.
+59984  top              0.0  00:00.30 1/1 0   14     3304K 0B   0B    59979 59979 running 
+59979  Python           0.0  00:01.77 5   4   189    98M   24M  0B    59979 59795 sleeping
+59795  zsh              0.0  00:00.14 1   0   21     1956K 0B   0B    59795 59794 sleeping
+59794  login            0.0  00:00.03 2   1   31     1052K 0B   0B    59794 59746 sleeping
+59790  mdworker_shared  0.0  00:00.07 3   1   59     8952K 0B   7016K 59790 1     sleeping
+59789  XprotectService  0.0  00:00.04 2   1   39     3584K 0B   1680K 59789 1     sleeping
+59787  syncdefaultsd    0.0  00:00.64 3   1   834    13M   0B   7696K 59787 1     sleeping
+59786  com.apple.WebKit 0.0  00:00.07 3   1   86     4240K 0B   2988K 59786 1     sleeping
+59784  com.apple.WebKit 0.0  00:11.40 6   1   132    296M  768K 35M   59784 1     sleeping
+59746  Terminal         0.0  00:03.00 8   3   289    81M   14M  32M   59746 1     sleeping
+Processes: 416 total, 2 running, 414 sleeping, 2193 threads 
+2020/04/24 16:08:35
+Load Avg: 1.66, 1.69, 2.06 
+CPU usage: 5.62% user, 10.17% sys, 84.19% idle 
+SharedLibs: 228M resident, 43M data, 11M linkedit.
+MemRegions: 135048 total, 2396M resident, 103M private, 935M shared.
+PhysMem: 8034M used (2483M wired), 157M unused.
+VM: 3224G vsize, 1882M framework vsize, 39762431(0) swapins, 42834511(0) swapouts.
+Networks: packets: 10766881/9512M in, 6526699/3187M out.
+Disks: 16468445/334G read, 4373925/221G written.
 
 PID    COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG  CMPRS PGRP  PPID  STATE   
-36899  syncdefaultsd    41.7 00:01.37 6     4   327-   15M    0B    0B    36899 1     sleeping
-543    trustd           32.7 03:13.25 3     2   187+   10M+   220K+ 2416K 543   1     sleeping
-33036  Code Helper (Ren 20.8 01:26.70 26    1   253    168M-  0B    38M   33028 33028 sleeping
-303    WindowServer     12.3 02:37:06 11    5   2079+  486M-  28M-  124M  303   1     sleeping
-36970  top              9.4  00:00.43 1/1   0   25+    2620K+ 0B    0B    36954 36954 running 
-0      kernel_task      5.7  02:13:18 212/4 0   0      247M-  0B    0B    0     0     running 
-193    launchservicesd  4.3  11:18.81 7     6   561    9224K  0B    4768K 193   1     sleeping
-214    hidd             1.8  18:38.88 6     3   357    4312K  0B    1508K 214   1     sleeping
-548    accountsd        1.8  08:57.76 4     2   961    180M+  256K  162M  548   1     sleeping
-33033  Code Helper (GPU 1.7  00:19.65 8     1   158    106M+  1024K 14M   33028 33028 sleeping
-Processes: 401 total, 2 running, 399 sleeping, 1991 threads 
-2020/04/24 13:02:22
-Load Avg: 2.64, 2.31, 2.03 
-CPU usage: 22.83% user, 7.21% sys, 69.95% idle 
-SharedLibs: 224M resident, 48M data, 16M linkedit.
-MemRegions: 100357 total, 2318M resident, 119M private, 851M shared.
-PhysMem: 7794M used (2233M wired), 397M unused.
-VM: 1853G vsize, 1881M framework vsize, 36890795(0) swapins, 39452060(0) swapouts.
-Networks: packets: 9075859/8002M in, 5647274/3059M out.
-Disks: 14266477/297G read, 3589991/193G written.
+59984  top              10.6 00:00.45 1/1   0   26+    3424K+ 0B    0B    59979 59979 running 
+303    WindowServer     10.4 02:54:26 11    5   2715+  673M-  6940K 136M  303   1     sleeping
+30854  Spotify          5.9  17:59.67 39    1   564    129M   0B    87M   30854 1     sleeping
+0      kernel_task      5.5  02:29:18 216/4 0   0      376M-  0B    0B    0     0     running 
+262    coreaudiod       3.5  46:37.79 7     1   584    8360K  0B    6124K 262   1     sleeping
+37614  Cisco AnyConnect 2.2  03:41.11 12    5   296    285M+  1024K 85M-  37614 1     sleeping
+863    Core Sync        1.3  04:23.72 31    4   859    26M    0B    19M-  863   1     sleeping
+550    Dock             1.2  01:39.59 5     2   890    120M   256K  94M   550   1     sleeping
+25405  com.apple.geod   0.8  00:28.22 5     3   121+   8276K+ 0B    5608K 25405 1     sleeping
+193    launchservicesd  0.7  12:41.39 5     4   720-   9224K- 0B    4812K 193   1     sleeping
+Processes: 416 total, 2 running, 414 sleeping, 2175 threads 
+2020/04/24 16:08:36
+Load Avg: 1.77, 1.71, 2.06 
+CPU usage: 6.92% user, 8.35% sys, 84.72% idle 
+SharedLibs: 228M resident, 43M data, 11M linkedit.
+MemRegions: 135045 total, 2397M resident, 103M private, 935M shared.
+PhysMem: 8028M used (2431M wired), 163M unused.
+VM: 3224G vsize, 1882M framework vsize, 39762431(0) swapins, 42834511(0) swapouts.
+Networks: packets: 10766886/9512M in, 6526703/3187M out.
+Disks: 16468547/334G read, 4373929/221G written.
 
-PID    COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG  CMPRS PGRP  PPID  STATE   
-543    trustd           34.3 03:13.61 3     2   185-   10M+   220K  2416K 543   1     sleeping
-303    WindowServer     11.1 02:37:06 11    5   2079   484M-  28M   124M  303   1     sleeping
-193    launchservicesd  3.6  11:18.84 5     4   556-   9188K- 0B    4768K 193   1     sleeping
-36970  top              3.6  00:00.47 1/1   0   26+    2632K+ 0B    0B    36954 36954 running 
-0      kernel_task      3.1  02:13:18 212/4 0   0      246M-  0B    0B    0     0     running 
-548    accountsd        1.9  08:57.78 4     2   959-   180M   256K  162M  548   1     sleeping
-550    Dock             1.2  01:17.31 4     1   844-   113M-  256K  93M   550   1     sleeping
-789    Adobe Desktop Se 0.8  03:25.92 30    3   365+   234M+  0B    205M- 789   1     sleeping
-33036  Code Helper (Ren 0.7  01:26.71 26    1   251-   168M-  0B    38M   33028 33028 sleeping
-36941  Microsoft.Python 0.7  00:13.28 25    0   52     224M   0B    0B    33028 33061 sleeping
+PID    COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG   CMPRS PGRP  PPID  STATE   
+303    WindowServer     11.5 02:54:26 11    5   2715   670M-  8504K+ 136M  303   1     sleeping
+30854  Spotify          8.6  17:59.76 39    1   564    129M   0B     87M-  30854 1     sleeping
+0      kernel_task      4.8  02:29:18 216/4 0   0      376M-  0B     0B    0     0     running 
+59984  top              4.2  00:00.49 1/1   0   27+    3424K  0B     0B    59979 59979 running 
+262    coreaudiod       3.9  46:37.83 7     1   584    8360K  0B     6124K 262   1     sleeping
+37614  Cisco AnyConnect 2.2  03:41.13 12    5   296    285M-  1024K  85M-  37614 1     sleeping
+213    bluetoothd       1.7  03:48.20 4     2   390+   4916K+ 0B     2224K 213   1     sleeping
+550    Dock             1.4  01:39.60 4     1   888-   120M-  256K   94M   550   1     sleeping
+234    loginwindow      1.3  04:02.77 6     2   528    47M-   0B     34M-  234   1     sleeping
+1      launchd          0.9  10:50.19 2     1   3902-  28M-   0B     13M-  1     0     sleeping
