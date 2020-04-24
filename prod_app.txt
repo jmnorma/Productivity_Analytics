@@ -42,6 +42,7 @@ Raspberry Pi Imager
 SMART Technologies 
 SWI-Prolog 
 Slack 
+Safari 
 Solstice Client 
 Spark AR Studio 
 Symantec Solutions 
